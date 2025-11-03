@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ciclo da Água — Explicação</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Entenda o ciclo da água: evaporação, transpiração, condensação, precipitação e infiltração." />
+  <style>
+    .container { width: min(100%, 980px); margin: 0 auto; display: grid; gap: 16px; }
+    .back-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 700; color: #0b5cab; background: #ffffff; padding: 10px 12px; border-radius: 10px; border: 1px solid rgba(0,0,0,.06); box-shadow: var(--shadow); width: fit-content; }
+    .card { background: var(--panel); border-radius: 12px; box-shadow: var(--shadow); padding: 14px; }
+    .hero-img { display: grid; place-items: center; background: #94F1FF; border-radius: 12px; box-shadow: var(--shadow); padding: 10px; }
+    .hero-img img { width: 50%; height: auto; border-radius: 10px; object-fit: contain; max-height: 70vh; }
+    .article h2 { margin: 8px 0 6px; }
+    .article p { color: var(--text); }
+    /* Grid de caixinhas das etapas */
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 8px; }
+    .step-card { background: #ffffff; border: 1px solid rgba(0,0,0,.06); border-radius: 12px; box-shadow: var(--shadow); padding: 14px; display: grid; gap: 6px; }
+    .step-head { display: flex; align-items: center; gap: 10px; }
+    .badge { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; font-weight: 800; color: #ffffff; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: var(--shadow); }
+    .step-card h3 { margin: 0; font-size: 18px; }
+    .step-card p { margin: 0; color: var(--text); }
+    .note { color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Ciclo da Água — Explicação</h1>
+    <p class="subtitle">Entenda as etapas principais do ciclo da água.</p>
+  </header>
+
+  <div class="container">
+    <a class="back-link" href="index.html" aria-label="Voltar ao jogo">
+      <span aria-hidden="true">←</span>
+      <span>Voltar ao jogo</span>
+    </a>
+
+    <div class="hero-img">
+      <img src="imagem.jpeg" alt="Ilustração do ciclo da água" />
+    </div>
+
+    <section class="card article" aria-label="Texto explicativo do ciclo da água">
+      <h2>O que é o Ciclo da Água?</h2>
+      <p>
+        O ciclo da água, também conhecido como ciclo hidrológico, é o processo contínuo de circulação da água no planeta,
+        passando pelos estados líquido, gasoso e sólido. Este ciclo é fundamental para a manutenção da vida na Terra,
+        regulando o clima e garantindo a disponibilidade de água doce para os ecossistemas e atividades humanas.
+      </p><br>
+
+      <h2>Etapas do Ciclo da Água</h2>
+      <div class="steps-grid" role="list">
+        <article class="step-card" role="listitem">
+          <div class="step-head">
+            <div class="badge" aria-hidden="true">1</div>
+            <h3>Evaporação</h3>
+          </div>
+          <p>A energia solar aquece superfícies de água como oceanos, rios e lagos, fazendo a água líquida virar vapor e subir para a atmosfera.</p>
+        </article>
+
+        <article class="step-card" role="listitem">
+          <div class="step-head">
+            <div class="badge" aria-hidden="true">2</div>
+            <h3>Transpiração</h3>
+          </div>
+          <p>As plantas liberam vapor de água por meio dos estômatos, contribuindo para a umidade do ar.</p>
+        </article>
+
+        <article class="step-card" role="listitem">
+          <div class="step-head">
+            <div class="badge" aria-hidden="true">3</div>
+            <h3>Condensação</h3>
+          </div>
+          <p>O vapor de água na atmosfera esfria, formando gotículas que se agrupam e originam as nuvens.</p>
+        </article>
+
+        <article class="step-card" role="listitem">
+          <div class="step-head">
+            <div class="badge" aria-hidden="true">4</div>
+            <h3>Precipitação</h3>
+          </div>
+          <p>Quando as gotículas nas nuvens se acumulam e ficam pesadas, caem como chuva, neve ou granizo, retornando à superfície terrestre.</p>
+        </article>
+
+        <article class="step-card" role="listitem">
+          <div class="step-head">
+            <div class="badge" aria-hidden="true">5</div>
+            <h3>Infiltração</h3>
+          </div>
+          <p>Parte da água precipitada penetra no solo, reabastecendo aquíferos e sendo absorvida pelas raízes das plantas.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+  
+</body>
+</html>
